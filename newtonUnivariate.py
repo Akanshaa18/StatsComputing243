@@ -24,7 +24,7 @@ def newtonUnivariate(x0,f,h, stoppingTolerance):
             return x_new
 
         x = x_new
-        return x
+    return x
         
 def f(x):
     """function to test newton method"""
