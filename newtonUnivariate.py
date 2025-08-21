@@ -18,19 +18,20 @@ def newtonUnivariate(x0,f,h, stoppingTolerance):
             break
     
         x_new = x - f_prime / f_doublePrime
-        # Stopping criterion
+        # Stopping criterion for iteration
         if abs(x_new - x) < stoppingTolerance:
             print(f"Converged in {i+1} iterations.")
             return x_new
 
         x = x_new
-        return x
+    return x
         
 def f(x):
     """function to test newton method"""
     return x**2 + 2*x + 1
     
 if __name__ == '__main__':
+    """main method"""
     x0= 5.0
     res = 0
     h = 1e-5
