@@ -1,3 +1,4 @@
+#practice forking and PRs EO
 import numpy as np
 
 def newtonMultivariate(x0,f,h,epsilon,stoppingTolerance):
